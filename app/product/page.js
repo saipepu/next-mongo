@@ -116,7 +116,7 @@ export default function Home() {
             products.map((p) => (
               <li key={p._id}>
                 <button className="border border-black p-1/2" onClick={deleteById(p._id)}>❌</button>{' '}
-                <Link href={`/${process.env.BASE_PATH}/product/${p._id}`} className="font-bold">
+                <Link href={`${process.env.BASE_PATH}/product/${p._id}`} className="font-bold">
                   {p.name}
                 </Link>{" "}
                 - {p.description}
